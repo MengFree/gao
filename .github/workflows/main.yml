@@ -35,4 +35,4 @@ jobs:
             - name: Sync with Gitee
               run: |
                 git remote add gitee https://M_Free:${{ env.TOKEN }}@gitee.com/M_Free/gao.git
-                git push --force gitee mater
+                git push --force gitee master
