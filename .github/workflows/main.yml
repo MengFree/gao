@@ -32,13 +32,7 @@ jobs:
               run: |
                   echo "[Error] Due to a change in the workflow file of the upstream repository, GitHub has automatically suspended the scheduled automatic update. You need to manually sync your fork."
                   exit 1
-    sync:
-        runs-on: ubuntu-latest
-        steps:
-        - name: Checkout repository
-          uses: actions/checkout@v2
-    
-        - name: Sync with Gitee
-          run: |
-            git remote add gitee https://M_Free:8d1d32363c72d9bde7764dffd392128a@gitee.com/M_Free/gao.git
-            git push --force gitee mater
+            - name: Sync with Gitee
+              run: |
+                git remote add gitee https://M_Free:8d1d32363c72d9bde7764dffd392128a@gitee.com/M_Free/gao.git
+                git push --force gitee mater
